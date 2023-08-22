@@ -1,0 +1,36 @@
+{
+    "include": "~/.config/waybar/modules",
+    "name": "main-bar",
+    "id": "mainBar",
+    "layer": "top",
+    "exclusive": true,
+    "passthrough": false,
+    "position": "top",
+    "height": 32,
+    "width": "",
+    "spacing": 6,
+    "margin": 0,
+    "fixed-center": true,
+    "ipc": true,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "sway/window"
+    ],
+    "modules-center": ["custom/tidal"],
+    "modules-right": [
+        "idle_inhibitor",
+        "bluetooth",
+        "pulseaudio",
+        "backlight",
+        "network",
+        "battery",
+        "clock",
+        "tray"
+    ],
+    // Choose the order of the modules
+    //"modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
+    //"modules-center": ["sway/window"],
+    //"modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"],
+}
+

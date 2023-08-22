@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Polkit agent
+if [[ ! `pidof xfce-polkit` ]]; then
+    /usr/lib/xfce-polkit/xfce-polkit &
+fi
+
+# Start network manager applet
+#nm-applet --indicator &
+
+# Start Nextcloud client
+#exec nextcloud &
+
+# Start mpd
+[ ! -s ~/.config/mpd/pid ] && mpd &
